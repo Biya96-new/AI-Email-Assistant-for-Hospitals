@@ -103,7 +103,7 @@ Watch the project in action:
 
 One of the biggest lessons from this project was:
 
-> **Building an AI agent isn't just about teaching it what to do—it's equally about defining what it should never do.**
+> **Building an AI agent isn't just about teaching it what to do,it's equally about defining what it should never do.**
 
 ---
 
