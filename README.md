@@ -1,69 +1,131 @@
 # 🏥 AI-Powered Hospital Email Assistant
 
-An AI-powered assistant that streamlines routine hospital email communication by generating draft responses for administrative queries while intelligently routing sensitive cases to hospital staff.
+An AI-powered email assistant that helps hospitals streamline routine administrative email enquiries using **Retrieval-Augmented Generation (RAG)** and **Large Language Models (LLMs)**.
 
-## 📖 Overview
+The assistant drafts responses for common administrative requests while identifying emails that require human review. Every response is saved as a **draft**, ensuring hospital staff remain in complete control before anything is sent.
 
-Hospital appointment desks spend considerable time responding to repetitive emails related to appointments, doctor availability, test preparation, insurance enquiries, and document requests.
+---
 
-This project automates those routine interactions by retrieving information from an approved hospital knowledge base and preparing draft responses for staff review, allowing teams to focus on higher-value patient interactions.
+## ✨ Features
 
-## ⚙️ How It Works
+- 📧 Reads incoming emails from Gmail
+- 🧠 Identifies the intent of patient enquiries
+- 📚 Retrieves relevant information from a hospital knowledge base using RAG
+- ✍️ Drafts context-aware responses for routine administrative emails
+- 🚩 Flags sensitive or complex emails for human review
+- 📨 Creates Gmail drafts instead of sending emails automatically
+- ⚙️ Supports workflow automation through GitHub Actions
 
-1. Reads incoming emails using the Gmail API.
-2. Identifies the user's intent.
-3. Retrieves relevant information from the hospital knowledge base stored in Google Drive.
-4. Generates a context-aware draft using the Groq LLM.
-5. Creates a Gmail draft for staff review.
-
-For requests involving medical advice, report interpretation, legal concerns, privacy-related issues, or queries outside the knowledge base, the system flags the email for manual handling instead of generating a response.
-
-## 🏗️ Architecture
-
-```text
-Incoming Email
-      │
- Gmail API
-      │
- Intent Detection
-      │
-Hospital Knowledge Base
-(Google Drive)
-      │
- Groq LLM
-      │
- Draft Response
-      │
- Human Review
-```
+---
 
 ## 🛠️ Tech Stack
 
-- Java
+- Python
+- Groq LLM API
 - Gmail API
 - Google Drive API
-- Groq API
-- GitHub
+- Google OAuth 2.0
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- GitHub Actions
 
-## ✨ Key Features
+---
 
-- Automated email processing
-- Intent classification
-- Knowledge-grounded response generation
-- Gmail draft creation
-- Intelligent escalation for sensitive queries
-- Human-in-the-loop approval workflow
+## 🚀 Getting Started
 
-## 🎥 Live Demo
+### 1. Clone the repository
 
-Watch the project in action here:
+```bash
+git clone <repository-url>
+cd AI-Hospital-Email-Assistant
+```
 
-## 👩‍💻 Author
+### 2. Install dependencies
 
-**Biya Rocky**
+Python
 
-📧 Passionate about Data Analytics, AI & Business Intelligence.
+```bash
+pip install -r requirements.txt
+```
 
-- **LinkedIn:** https://www.linkedin.com/in/your-linkedin-profile/
+Node (if applicable)
 
-If you found this project interesting, feel free to connect with me on LinkedIn.
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+This repository does **not** include API keys or OAuth credentials.
+
+Create a `.env` file using the provided `.env.example` file and add your own credentials.
+
+Example:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+
+GOOGLE_CLIENT_ID=your_google_client_id
+
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+GOOGLE_REFRESH_TOKEN=your_google_refresh_token
+
+GOOGLE_DRIVE_FOLDER_ID=your_google_drive_folder_id
+
+GMAIL_USER=your_email@example.com
+```
+
+> **Note:** This project requires your own API keys and OAuth credentials. It will not run until valid credentials are configured.
+
+If you intend to use GitHub Actions, configure the required repository secrets under:
+
+**Settings → Secrets and variables → Actions**
+
+---
+
+## 📖 Development Process
+
+This project was developed using an AI-assisted workflow.
+
+1. Defined the project requirements in a **Product Requirements Document (PRD)**.
+2. Converted the PRD into a phased implementation plan.
+3. Implemented each phase using **Google Antigravity (Vibe Coding)**.
+4. Iteratively tested and refined the solution.
+
+The repository includes both the **PRD** and the **Implementation Plan** to document the engineering process.
+
+---
+
+## 🎥 Project Demo
+
+Watch the project in action:
+
+> **📹 Demo:** *Add your LinkedIn / YouTube / Google Drive video link here*
+
+## 💡 Key Takeaway
+
+One of the biggest lessons from this project was:
+
+> **Building an AI agent isn't just about teaching it what to do—it's equally about defining what it should never do.**
+
+---
+
+## 🙏 Acknowledgements
+
+This project was built as part of the **AI Pro Program by Codebasics**.
+
+Special thanks to:
+
+- Dhaval Patel
+- Hemanand Vadivel
+- Naveen S
+- Aditya Goel
+
+and the entire Codebasics team for creating a learning experience focused on solving real-world business problems with AI.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
