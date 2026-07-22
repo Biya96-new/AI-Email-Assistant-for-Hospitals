@@ -36,8 +36,8 @@ The assistant drafts responses for common administrative requests while identify
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd AI-Hospital-Email-Assistant
+git clone https://github.com/Biya96-new/AI-Email-Assistant-for-Hospitals.git
+cd AI-Email-Assistant-for-Hospitals
 ```
 
 ### 2. Install dependencies
