@@ -78,10 +78,6 @@ GMAIL_USER=your_email@example.com
 
 > **Note:** This project requires your own API keys and OAuth credentials. It will not run until valid credentials are configured.
 
-If you intend to use GitHub Actions, configure the required repository secrets under:
-
-**Settings → Secrets and variables → Actions**
-
 ---
 
 ## 📖 Development Process
@@ -90,7 +86,7 @@ This project was developed using an AI-assisted workflow.
 
 1. Defined the project requirements in a **Product Requirements Document (PRD)**.
 2. Converted the PRD into a phased implementation plan.
-3. Implemented each phase using **Google Antigravity (Vibe Coding)**.
+3. Implemented each phase using **Google Antigravity**.
 4. Iteratively tested and refined the solution.
 
 The repository includes both the **PRD** and the **Implementation Plan** to document the engineering process.
@@ -108,21 +104,6 @@ Watch the project in action:
 One of the biggest lessons from this project was:
 
 > **Building an AI agent isn't just about teaching it what to do—it's equally about defining what it should never do.**
-
----
-
-## 🙏 Acknowledgements
-
-This project was built as part of the **AI Pro Program by Codebasics**.
-
-Special thanks to:
-
-- Dhaval Patel
-- Hemanand Vadivel
-- Naveen S
-- Aditya Goel
-
-and the entire Codebasics team for creating a learning experience focused on solving real-world business problems with AI.
 
 ---
 
