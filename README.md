@@ -97,7 +97,7 @@ The repository includes both the **PRD** and the **Implementation Plan** to docu
 
 Watch the project in action:
 
-> **📹 Demo:** *(https://www.linkedin.com/posts/biya-rocky-dataanalyst_digitalhealth-healthcareinnovation-hospitalmanagement-ugcPost-7485921814838149120-ck1d/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACeEowYByIUu1ymdXneEMbHii85a1lJyZSo)*
+> **📹 Demo:** *[LinkedIn](https://www.linkedin.com/posts/biya-rocky-dataanalyst_digitalhealth-healthcareinnovation-hospitalmanagement-ugcPost-7485921814838149120-ck1d/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACeEowYByIUu1ymdXneEMbHii85a1lJyZSo)*
 
 ## 💡 Key Takeaway
 
